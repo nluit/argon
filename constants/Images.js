@@ -9,8 +9,8 @@ const ArgonLogo = require("../assets/imgs/argonlogo.png");
 const iOSLogo = require("../assets/imgs/ios.png");
 const androidLogo = require("../assets/imgs/android.png");
 // internet imgs
-
-const ProfilePicture = 'https://images.unsplash.com/photo-1492633423870-43d1cd2775eb?fit=crop&w=1650&q=80';
+ 
+const ProfilePicture = 'https://scontent.fdad1-1.fna.fbcdn.net/v/t1.30497-1/c47.0.160.160a/p160x160/84241059_189132118950875_4138507100605120512_n.jpg?_nc_cat=1&_nc_sid=dbb9e7&_nc_ohc=vnaXmeu27J4AX93y8jc&_nc_ht=scontent.fdad1-1.fna&oh=20758fb9dd897094c8ebd8b3758bcb5b&oe=5EBCCBA4';
 
 const Viewed = [
   'https://images.unsplash.com/photo-1501601983405-7c7cabaa1581?fit=crop&w=240&q=80',

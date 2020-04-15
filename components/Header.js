@@ -126,7 +126,7 @@ class Header extends React.Component {
       <Block row style={styles.options}>
         <Button shadowless style={[styles.tab, styles.divider]} >
           <Block row middle>
-            <Icon name="diamond" family="ArgonExtra" style={{ paddingRight: 8 }} color={argonTheme.COLORS.ICON} />
+            <Icon name="ungroup" family="ArgonExtra" style={{ paddingRight: 8 }} color={argonTheme.COLORS.ICON} />
             <TouchableOpacity onPress={() => navigation.navigate('Home')}><Text size={16} style={styles.tabTitle}>{optionLeft || 'Categoty'}</Text></TouchableOpacity>
           </Block>
         </Button>

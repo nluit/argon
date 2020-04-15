@@ -44,7 +44,7 @@ class Articles extends React.Component {
       <TouchableWithoutFeedback
         style={{ zIndex: 3 }}
         key={`product-${item.title}`}
-        onPress={() => navigation.navigate("Pro", { product: item })}
+        onPress={() => navigation.navigate("Product", { product: item })}
       >
         <Block center style={styles.productItem}>
           <Image
@@ -81,21 +81,23 @@ class Articles extends React.Component {
   renderCards = () => {
     return (
       <Block flex style={styles.group}>
-        <Text bold size={16} style={styles.title}>
+        {/* <Text bold size={16} style={styles.title}>
           Cards
-        </Text>
+        </Text> */}
         <Block flex>
           <Block style={{ paddingHorizontal: theme.SIZES.BASE }}>
             <Card item={articles[0]} horizontal />
-            <Block flex row>
+                        <Card item={articles[0]} horizontal />
+
+            {/* <Block flex row>
               <Card
                 item={articles[1]}
                 style={{ marginRight: theme.SIZES.BASE }}
               />
               <Card item={articles[2]} />
-            </Block>
-            <Card item={articles[4]} full />
-            <Block flex card shadow style={styles.category}>
+            </Block> */}
+            {/* <Card item={articles[4]} full /> */}
+            {/* <Block flex card shadow style={styles.category}>
               <ImageBackground
                 source={{ uri: Images.Products["View article"] }}
                 style={[
@@ -113,7 +115,7 @@ class Articles extends React.Component {
                   </Text>
                 </Block>
               </ImageBackground>
-            </Block>
+            </Block> */}
           </Block>
           <Block flex style={{ marginTop: theme.SIZES.BASE / 2 }}>
             <ScrollView
@@ -139,46 +141,46 @@ class Articles extends React.Component {
     );
   };
 
-  renderAlbum = () => {
-    const { navigation } = this.props;
+  // renderAlbum = () => {
+  //   const { navigation } = this.props;
 
-    return (
-      <Block
-        flex
-        style={[styles.group, { paddingBottom: theme.SIZES.BASE * 5 }]}
-      >
-        <Text bold size={16} style={styles.title}>
-          Album
-        </Text>
-        <Block style={{ marginHorizontal: theme.SIZES.BASE * 2 }}>
-          <Block flex right>
-            <Text
-              size={12}
-              color={theme.COLORS.PRIMARY}
-              onPress={() => navigation.navigate("Home")}
-            >
-              View All
-            </Text>
-          </Block>
-          <Block
-            row
-            space="between"
-            style={{ marginTop: theme.SIZES.BASE, flexWrap: "wrap" }}
-          >
-            {Images.Viewed.map((img, index) => (
-              <Block key={`viewed-${img}`} style={styles.shadow}>
-                <Image
-                  resizeMode="cover"
-                  source={{ uri: img }}
-                  style={styles.albumThumb}
-                />
-              </Block>
-            ))}
-          </Block>
-        </Block>
-      </Block>
-    );
-  };
+  //   return (
+  //     <Block
+  //       flex
+  //       style={[styles.group, { paddingBottom: theme.SIZES.BASE * 5 }]}
+  //     >
+  //       <Text bold size={16} style={styles.title}>
+  //         Album
+  //       </Text>
+  //       <Block style={{ marginHorizontal: theme.SIZES.BASE * 2 }}>
+  //         <Block flex right>
+  //           <Text
+  //             size={12}
+  //             color={theme.COLORS.PRIMARY}
+  //             onPress={() => navigation.navigate("Home")}
+  //           >
+  //             View All
+  //           </Text>
+  //         </Block>
+  //         <Block
+  //           row
+  //           space="between"
+  //           style={{ marginTop: theme.SIZES.BASE, flexWrap: "wrap" }}
+  //         >
+  //           {Images.Viewed.map((img, index) => (
+  //             <Block key={`viewed-${img}`} style={styles.shadow}>
+  //               <Image
+  //                 resizeMode="cover"
+  //                 source={{ uri: img }}
+  //                 style={styles.albumThumb}
+  //               />
+  //             </Block>
+  //           ))}
+  //         </Block>
+  //       </Block>
+  //     </Block>
+  //   );
+  // };
 
   render() {
     return (
@@ -187,7 +189,7 @@ class Articles extends React.Component {
           showsVerticalScrollIndicator={false}
         >
           {this.renderCards()}
-          {this.renderAlbum()}
+          {/* {this.renderAlbum()} */}
         </ScrollView>
       </Block>
     );

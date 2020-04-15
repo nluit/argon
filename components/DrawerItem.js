@@ -40,7 +40,7 @@ class DrawerItem extends React.Component {
       case "Profile":
         return (
           <Icon
-            name="chart-pie-35"
+            name="spaceship"
             family="ArgonExtra"
             size={14}
             color={focused ? "white" : argonTheme.COLORS.WARNING}
@@ -67,7 +67,8 @@ class DrawerItem extends React.Component {
         case "Login":
           return (
             <Icon
-              name="chart-pie-35"
+              name="engine-start"
+
               family="ArgonExtra"
               size={14}
               color={focused ? "white" : argonTheme.COLORS.WARNING}

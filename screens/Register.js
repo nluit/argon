@@ -112,15 +112,6 @@ class Register extends React.Component {
                           />
                         }
                       />
-                      {/* <Block row style={styles.passwordCheck}>
-                        <Text size={12} color={argonTheme.COLORS.MUTED}>
-                          password strength:
-                        </Text>
-                        <Text bold size={12} color={argonTheme.COLORS.SUCCESS}>
-                          {" "}
-                          strong
-                        </Text>
-                      </Block> */}
                     </Block>
                     <Block row width={width * 0.75}>
                       <Checkbox

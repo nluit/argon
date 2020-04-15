@@ -28,10 +28,9 @@ class Login extends React.Component {
           <Block flex middle>
             <Block style={styles.registerContainer}>
               <Block flex={0.25} middle style={styles.socialConnect}>
-                <Text color="#8898AA" size={12}>
+                <Text color="#8898AA" size={25}>
                   LOGIN
                 </Text>
-
               </Block>
               <Block flex>
                 <Block flex center>
@@ -99,7 +98,7 @@ class Login extends React.Component {
 const styles = StyleSheet.create({
   registerContainer: {
     width: width * 0.9,
-    height: height * 0.78,
+    height: height * 0.5,
     backgroundColor: "#F4F5F7",
     borderRadius: 4,
     shadowColor: argonTheme.COLORS.BLACK,

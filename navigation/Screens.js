@@ -43,7 +43,7 @@ function ElementsStack(props) {
           cardStyle: { backgroundColor: "#F8F9FE" }
         }}
       />
-            <Stack.Screen
+            {/* <Stack.Screen
         name="Pro"
         component={Pro}
         options={{
@@ -59,7 +59,7 @@ function ElementsStack(props) {
           ),
           headerTransparent: true
         }}
-      />
+      /> */}
     </Stack.Navigator>
   );
 }
@@ -77,7 +77,7 @@ function ArticlesStack(props) {
           cardStyle: { backgroundColor: "#F8F9FE" }
         }}
       />
-            <Stack.Screen
+            {/* <Stack.Screen
         name="Pro"
         component={Pro}
         options={{
@@ -93,7 +93,7 @@ function ArticlesStack(props) {
           ),
           headerTransparent: true
         }}
-      />
+      /> */}
     </Stack.Navigator>
   );
 }
@@ -158,7 +158,7 @@ function HomeStack(props) {
           cardStyle: { backgroundColor: "#F8F9FE" }
         }}
       />
-      <Stack.Screen
+      {/* <Stack.Screen
         name="Pro"
         component={Pro}
         options={{
@@ -174,7 +174,7 @@ function HomeStack(props) {
           ),
           headerTransparent: true
         }}
-      />
+      /> */}
     </Stack.Navigator>
   );
 }
@@ -198,7 +198,7 @@ function ProductStack(props) {
           cardStyle: { backgroundColor: "#F8F9FE" }
         }}
       />
-      <Stack.Screen
+      {/* <Stack.Screen
         name="Pro"
         component={Pro}
         options={{
@@ -214,28 +214,28 @@ function ProductStack(props) {
           ),
           headerTransparent: true
         }}
-      />
+      /> */}
     </Stack.Navigator>
   );
 }
 
 
-export default function OnboardingStack(props) {
-  return (
-    <Stack.Navigator mode="card" headerMode="none">
-      <Stack.Screen
-        name="Onboarding"
-        component={Onboarding}
-        option={{
-          headerTransparent: true
-        }}
-      />
-      <Stack.Screen name="App" component={AppStack} />
-    </Stack.Navigator>
-  );
-}
+// export default function OnboardingStack(props) {
+//   return (
+//     <Stack.Navigator mode="card" headerMode="none">
+//       <Stack.Screen
+//         name="Onboarding"
+//         component={Onboarding}
+//         option={{
+//           headerTransparent: true
+//         }}
+//       />
+//       <Stack.Screen name="App" component={AppStack} />
+//     </Stack.Navigator>
+//   );
+// }
 
-function AppStack(props) {
+export default function AppStack(props) {
   return (
     <Drawer.Navigator
       style={{ flex: 1 }}
@@ -264,7 +264,7 @@ function AppStack(props) {
           fontWeight: "normal"
         }
       }}
-      initialRouteName="Home"
+      initialRouteName="Login"
     >
       <Drawer.Screen name="Home" component={HomeStack} />
       <Drawer.Screen name="Profile" component={ProfileStack} />
