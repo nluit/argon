@@ -1,7 +1,7 @@
 {
   "expo": {
     "name": "Argon FREE React Native",
-    "slug": "argon-free-react-native",
+    "slug": "argon",
     "privacy": "public",
     "sdkVersion": "36.0.0",
     "platforms": [
@@ -24,6 +24,8 @@
     ],
     "ios": {
       "supportsTablet": true
-    }
+    },
+    "description": "Argon React Native, based on Argon Design System. Coded by Creative Tim",
+    "githubUrl": "https://github.com/nluit/argon.git"
   }
 }

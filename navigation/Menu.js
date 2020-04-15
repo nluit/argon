@@ -16,8 +16,9 @@ function CustomDrawerContent({ drawerPosition, navigation, profile, focused, sta
     "Home", 
     "Profile",
     "Account",
-    "Elements",
-    "Articles",
+    // "Elements",
+    // "Articles",
+    // "Home2"
   ];
   return (
     <Block
@@ -49,7 +50,6 @@ function CustomDrawerContent({ drawerPosition, navigation, profile, focused, sta
     </Block>
   );
 }
-
 
 const styles = StyleSheet.create({
   container: {

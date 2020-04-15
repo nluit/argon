@@ -114,7 +114,7 @@ class Header extends React.Component {
         style={styles.search}
         placeholder="Search..."
         placeholderTextColor={'#8898AA'}
-        onFocus={() => navigation.navigate('Pro')}
+        // onFocus={() => navigation.navigate('Pro')}
         iconContent={<Icon size={16} color={theme.COLORS.MUTED} name="search-zoom-in" family="ArgonExtra" />}
       />
     );
@@ -124,16 +124,16 @@ class Header extends React.Component {
 
     return (
       <Block row style={styles.options}>
-        <Button shadowless style={[styles.tab, styles.divider]} onPress={() => navigation.navigate('Pro')}>
+        <Button shadowless style={[styles.tab, styles.divider]} >
           <Block row middle>
             <Icon name="diamond" family="ArgonExtra" style={{ paddingRight: 8 }} color={argonTheme.COLORS.ICON} />
-            <Text size={16} style={styles.tabTitle}>{optionLeft || 'Categoty'}</Text>
+            <TouchableOpacity onPress={() => navigation.navigate('Home')}><Text size={16} style={styles.tabTitle}>{optionLeft || 'Categoty'}</Text></TouchableOpacity>
           </Block>
         </Button>
-        <Button shadowless style={styles.tab} onPress={() => navigation.navigate('Pro')}>
+        <Button shadowless style={styles.tab} >
           <Block row middle>
             <Icon size={16} name="bag-17" family="ArgonExtra" style={{ paddingRight: 8 }} color={argonTheme.COLORS.ICON}/>
-            <Text size={16} style={styles.tabTitle}>{optionRight || 'Product'}</Text>
+            <TouchableOpacity onPress={() => navigation.navigate('Product')} ><Text size={16} style={styles.tabTitle}>{optionRight || 'Product'}</Text></TouchableOpacity>
           </Block>
         </Button>
       </Block>
