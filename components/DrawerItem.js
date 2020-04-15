@@ -64,6 +64,15 @@ class DrawerItem extends React.Component {
         />);
       case "Log out":
         return <Icon />;
+        case "Login":
+          return (
+            <Icon
+              name="chart-pie-35"
+              family="ArgonExtra"
+              size={14}
+              color={focused ? "white" : argonTheme.COLORS.WARNING}
+            />
+          );
       default:
         return null;
     }
